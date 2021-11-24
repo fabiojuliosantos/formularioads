@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+    <head>
+        <meta charset="UTF-8">
+        <title>Formulário ADS</title>
+    </head>
+    <body>
+        
+        <form>
+            <fieldset>
+                <legend>Formulário de Inscrição</legend>
+                <p>
+                    <label>Nome</label>
+                    <input type = "text" required
+                    value = "" 
+                    placeholder ="Digite seu nome" />
+                </p>
+                <p>
+                    <label>Sobrenome</label>
+                    <input type = "text" required
+                    id = "txtsobrenome"
+                    value = "" 
+                    placeholder = "Digite seu Sobrenome"/>
+                </p>
+                <p>
+                    <label>Idade</label>
+                    <input type = "number" required
+                    min = "18"
+                    max = "120"
+                    id = "idade"
+                    value = ""/>
+                    
+                </p>
+                <p>
+                    <label>E-mail</label>
+                    <input type = "email" required
+                    id = "txtemail"
+                    value = ""
+                    placeholder = "Insira seu e-mail" />
+                   
+                </p>
+                <p> <label>Sexo</label>
+                    <input type = "radio" 
+                    name = "Sexo"
+                    id = "masc"
+                    value = "1"
+                    checked = "checked"
+                    /> Masculino 
+                
+                    <input type = "radio"
+                    name = "Sexo"
+                    id = "Fem" 
+                    value = "2"
+                    /> Feminino
+                </p>    
+                <p>
+                    <label>Foto</label>
+                    <input type = "file" required
+                    name = "foto" 
+                    accept = ".jpeg, .png"/>
+                </p>
+                <p>
+                    <label>País</label>
+                    <select id = "Países" required> 
+                        <option value = "Argentina">Argentina</option>
+                        <option value = "Bolívia">Bolívia</option>
+                        <option value = "Brasil">Brasil</option> 
+                        <option value = "Chile">Chile</option>
+                        <option value = "Colômbia">Colômbia</option>
+                        <option value = "Equador">Equador</option>
+                        <option value = "Guiana">Guiana</option>
+                        <option value = "Guiana Francesa">Guiana Francesa</option>
+                        <option value = "Paraguai">Paraguai</option>
+                        <option value = "Peru">Peru</option>
+                        <option value = "Suriname">Suriname</option>
+                        <option value = "Uruguai">Uruguai</option>
+                        <option value = "Venezuela">Venezuela</option>
+                    </select>
+                </p>
+                <p>
+                    <label>As linguagens que você prefere?</label>
+                    <select id = "Linguagens" size="5" multiple required>
+                        <option value = "Python">Python</option>
+                        <option value = "Java">Java</option>
+                        <option value = "C#">C#</option>
+                        <option value = "C++">C++</option>
+                        <option value = "PHP">PHP</option>
+                        <p>(Para fazer várias escolhas, mantenha a tecla CTRL pressionada)</p>
+                    </select>
+                    (Para fazer várias escolhas, mantenha a tecla CTRL pressionada)
+                </p>
+                <label>Áreas de Atuação</label>
+                <input type = "checkbox" 
+                id = "computacao"
+                value = "Computação"/> Computação
+
+                <input type = "checkbox" 
+                id = "Gestao"
+                value = "Gestão"/> Gestão
+                
+                <input type = "checkbox"
+                id = "pedagogia"
+                value = "Pedagogia"/> Pedagogia
+                <p>
+                <input type = "submit"
+                value = "Enviar"/> 
+                <input type = "reset"
+                value = "Limpar"/>
+                </p>
+                
+            </fieldset>
+        </form>
+        
+    </body>
+</html> 
